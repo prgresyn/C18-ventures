@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C18 Ventures</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #1A1A2E;
+            color: #E0E0E0;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: #1A1A2E;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        .header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #6B48FF;
+        }
+
+        .nav a {
+            color: #E0E0E0;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover {
+            color: #6B48FF;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+            padding: 100px 40px 40px;
+            background: #1A1A2E;
+        }
+
+        .hero-content {
+            max-width: 50%;
+        }
+
+        .hero-content .tagline {
+            display: inline-block;
+            background: linear-gradient(90deg, #6B48FF, #A148FF);
+            color: #FFFFFF;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            color: #B0B0C0;
+            margin-bottom: 30px;
+        }
+
+        .hero-content .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: transparent;
+            color: #E0E0E0;
+            border: 2px solid #6B48FF;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .hero-content .btn:hover {
+            background: #6B48FF;
+            color: #FFFFFF;
+        }
+
+        .hero-image {
+            max-width: 45%;
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .hero-image::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: 100%;
+            height: 100%;
+            border: 5px solid transparent;
+            border-image: linear-gradient(45deg, #6B48FF, #A148FF) 1;
+            border-radius: 10px;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 40px;
+            background: #252A4A;
+        }
+
+        .services h2 {
+            color: #6B48FF;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .service-item {
+            margin-bottom: 20px;
+        }
+
+        .service-item h3 {
+            color: #E0E0E0;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .service-item p {
+            color: #B0B0C0;
+        }
+
+        /* About Section */
+        .about {
+            padding: 40px;
+            background: #1A1A2E;
+            text-align: center;
+        }
+
+        .about h2 {
+            color: #6B48FF;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            color: #B0B0C0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+}
+            .hero-content, .hero-image {
+                max-width: 100%;
+            }
+            .hero-content {
+                margin-bottom: 40px;
+            }
+            .nav a {
+                margin-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">C18 Ventures</div>
+        <div class="nav">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <span class="tagline">VENTURE FIRM</span>
+            <h1>BUILDING SCALABLE VENTURES.</h1>
+            <p>We fund and manage businesses across finance, real estate, tech, and education to drive impact and growth.</p>
+            <a href="#about" class="btn">About Us</a>
+        </div>
+        <div class="hero-image">
+            <!-- Placeholder for image; replace with actual image URL -->
+            <img src="https://via.placeholder.com/400x300" alt="C18 Ventures">
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>Finance</h3>
+            <p>Forex signal services and investment initiatives to maximize returns.</p>
+        </div>
+        <div class="service-item">
+            <h3>Real Estate</h3>
+            <p>Development projects driving sustainable growth and value.</p>
+        </div>
+        <div class="service-item">
+            <h3>Tech</h3>
+            <p>Innovative digital solutions for scalability and efficiency.</p>
+        </div>
+        <div class="service-item">
+            <h3>Education</h3>
+            <p>Mentorship programs empowering the next generation.</p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about" id="about">
+        <h2>About Company</h2>
+        <p>C18 Ventures is a venture firm dedicated to building, funding, and managing scalable businesses across finance, real estate, tech, and education. Our portfolio includes forex signal services, mentorship programs, real estate developments, and digital solutions. We are focused on creating ventures that drive real impact and ensure long-term growth.</p>
+    </div>
+</body>
+</html>
